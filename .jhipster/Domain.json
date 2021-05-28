@@ -1,0 +1,30 @@
+{
+  "name": "Domain",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "skill",
+      "otherEntityRelationshipName": "domain",
+      "relationshipName": "skill",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210313121720",
+  "entityTableName": "domain",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "skillapp",
+  "applications": "*",
+  "microserviceName": "skillapp"
+}
